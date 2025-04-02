@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>短链接生成工具</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/logo-full-dark-BXNzNp8o.png" width="120">
+    </header>
+    <div class="generator-box">
+      <input type="url" id="inputUrl" placeholder="https://">
+      <button id="generateBtn">生成短链</button>
+      <div class="result-area" hidden>
+        <a id="resultLink" target="_blank"></a>
+        <button id="copyBtn">复制</button>
+      </div>
+    </div>
+    <div class="history-section">
+      <h3>生成历史</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
